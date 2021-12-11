@@ -14,6 +14,22 @@ variable "worker_2_ip" {
   type = string
 }
 
+variable "manager_1_internal_ip" {
+  type = string
+}
+
+variable "manager_2_internal_ip" {
+  type = string
+}
+
+variable "worker_1_internal_ip" {
+  type = string
+}
+
+variable "worker_2_internal_ip" {
+  type = string
+}
+
 variable "ssh_user" {
   type = string
 }
