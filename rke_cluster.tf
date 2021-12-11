@@ -41,3 +41,8 @@ resource "rke_cluster" "main" {
     max_unavailable_worker = "20%"
   }
 }
+
+resource "local_file" "kube_config" {
+  filename = "./kube_config_cluster.yml"
+  content = rke_cluster.main.kube_config_yaml
+}
